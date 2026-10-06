@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/style.player.css">
+</head>
+<body>
+
+  <canvas id="visualizer"></canvas>
+
+  <div id="playlistModal">
+    <h3>Músicas no db/musics.json (Pressione W para fechar)</h3>
+    <div id="playlistContent"></div>
+  </div>
+
+  <div class="wmp-window">
+    <div class="wmp-header">
+      <span>LucPlayer - Player</span>
+    </div>
+
+    <div class="wmp-info-panel">
+      <div class="track-title" id="songTitle">Nenhuma música carregada</div>
+      <div class="preset-title" id="presetTitle">Preset Milkdrop: NENHUM</div>
+    </div>
+
+    <div class="wmp-controls-panel">
+      <div class="progress-container">
+        <span class="time-display" id="currentTime">00:00</span>
+        <div class="progress-bar-wrapper" id="progressWrapper">
+          <div class="progress-bar" id="progressBar"></div>
+        </div>
+        <span class="time-display" id="totalTime">00:00</span>
+      </div>
+    </div>
+
+    <div class="controls-guide">
+      <div><span>Q:</span> Música anterior</div>
+      <div><span>E:</span> Próxima música</div>
+      <div><span>W:</span> Mostrar/Esconder Lista</div>
+      <div><span>1:</span> Trocar arquivo .milk</div>
+    </div>
+  </div>
+
+  <audio id="audioPlayer" crossorigin="anonymous"></audio>
+
+  <script src="../node_modules/milkdrop-preset-converter/dist/milkdrop-preset-converter.min.js"></script>
+  <script src="js/player.js"></script>
+</body>
+</html>

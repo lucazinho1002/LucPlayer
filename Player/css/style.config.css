@@ -1,0 +1,79 @@
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      user-select: none;
+    }
+
+    body {
+      background-color: #3b4cca; /* Azul de fundo conforme a imagem */
+      height: 100vh;
+      width: 100vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      font-family: Arial, sans-serif;
+      overflow: hidden;
+    }
+
+    /* Botão de voltar no canto superior esquerdo */
+    .btn-back {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      width: 50px;
+      height: 50px;
+      background-color: #2b3990;
+      border: 3px solid #7c8cdb;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      color: #00d2ff;
+      font-size: 28px;
+      font-weight: bold;
+      border-radius: 4px;
+      transition: background 0.2s;
+    }
+
+    .btn-back:hover {
+      background-color: #1e2968;
+    }
+
+    /* Painel central cinza com cantos arredondados */
+    .main-card {
+      width: 80%;
+      height: 70%;
+      background-color: #808080; /* Cinza conforme a imagem */
+      border-radius: 40px;
+      padding: 40px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    /* Texto/Botão "adicionar .milk" */
+    .btn-add-milk {
+      color: #00d2ff;
+      font-size: 22px;
+      font-weight: bold;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 5px 0;
+      transition: transform 0.1s, color 0.2s;
+    }
+
+    .btn-add-milk:hover {
+      color: #ffffff;
+      transform: scale(1.03);
+    }
+
+    /* Lista de status dos arquivos importados */
+    .status-msg {
+      margin-top: 20px;
+      color: #ffffff;
+      font-size: 14px;
+    }
