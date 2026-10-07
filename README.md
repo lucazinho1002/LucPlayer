@@ -1,5 +1,5 @@
 # LucPlayer
-
+parei com o projeto pois jnao consegui arrumar
 um visualizador de musica  legal
 
 ## Coisas muuuito importantes
